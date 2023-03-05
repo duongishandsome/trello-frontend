@@ -1,0 +1,18 @@
+@import '_setting.scss';
+
+.board-content {
+    display: flex;
+    overflow-x: auto;
+    margin: 0 10px 10px;
+
+    &::-webkit-scrollbar {
+        height: 12px;
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #091e4214;
+        border-radius: 5px;
+        background: #66a4c7;
+    }
+}
