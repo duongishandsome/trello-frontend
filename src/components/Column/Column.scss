@@ -10,7 +10,7 @@ $col-footer-height: 38px;
     &:not(:first-child) {
         margin-left: $gap;
     }
-    max-height: calc(100% - 130px);
+    max-height: calc(100% - #{$gap});
     background-color: $list-bg-color;
     padding: 0 4px;
 
@@ -25,16 +25,18 @@ $col-footer-height: 38px;
     }
 
     header {
+        padding-left: 10px;
         height: $col-header-height;
         line-height: $col-header-height;
     }
 
     footer {
+        padding-left: 10px;
         height: $col-footer-height;
         line-height: $col-footer-height;
     }
 
-    .task-list {
+    .card-list {
         max-height: calc(100% - #{$col-header-height} - #{$col-footer-height});
         overflow-y: auto;
         &::-webkit-scrollbar {
@@ -46,7 +48,5 @@ $col-footer-height: 38px;
             background: #091e4214;
             border-radius: 4px;
         }
-
-        
     }
 }

@@ -1,15 +1,16 @@
 @import '_setting.scss';
 
-.task-item {
+.card-item {
     padding: $gap;
     background-color: #fff;
+    font-weight: 400;
     &:not(:last-child) {
         margin-bottom: $gap;
     }
     border-radius: 3px;
 }
 
-img {
+.card-cover {
     display: block;
     width: calc(100% + 2 * #{$gap});
     margin: -$gap 0 $gap (-$gap);
