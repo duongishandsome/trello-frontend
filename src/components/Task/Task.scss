@@ -1,0 +1,18 @@
+@import '_setting.scss';
+
+.task-item {
+    padding: $gap;
+    background-color: #fff;
+    &:not(:last-child) {
+        margin-bottom: $gap;
+    }
+    border-radius: 3px;
+}
+
+img {
+    display: block;
+    width: calc(100% + 2 * #{$gap});
+    margin: -$gap 0 $gap (-$gap);
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
